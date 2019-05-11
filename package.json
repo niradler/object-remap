@@ -1,7 +1,7 @@
 {
   "name": "object-remap",
   "version": "0.0.3",
-  "description": "remap object fields to new structure.",
+  "description": "Remap object fields to a new structure.",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir ./",
