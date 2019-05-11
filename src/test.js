@@ -22,8 +22,9 @@ const fieldsMap = [
   {
     origin: "d.f",
     target: "f",
-    formater: data => [data[0]]
+    formater: data => `${data.length} items`
   }
 ];
 
-console.log("object", obj, "object remap", objectRemap(obj, fieldsMap));
+const newObj = objectRemap(obj, fieldsMap);
+console.log({ obj, newObj });
