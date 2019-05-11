@@ -1,0 +1,12 @@
+{
+  "name": "object-mapper",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
+  "license": "MIT"
+}
