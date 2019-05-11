@@ -1,18 +1,30 @@
 {
   "name": "object-remap",
   "version": "0.0.2",
-  "description": "",
+  "description": "remap object fields to new structure.",
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir ./",
     "test": "node src/test.js",
     "deploy": "npm run build && npm version patch && npm publish"
   },
-  "keywords": [],
+  "keywords": [
+    "remap",
+    "object"
+  ],
   "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
   "license": "MIT",
   "dependencies": {
     "lodash.get": "^4.4.2",
     "lodash.set": "^4.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niradler/object-remap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/niradler/object-remap/issues"
+  },
+  "homepage": "https://github.com/niradler/object-remap#readme"
 }

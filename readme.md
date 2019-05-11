@@ -1,6 +1,10 @@
 # object-remap
 
 ```
+npm i -S object-remap
+```
+
+```
 const objectRemap = require("object-remap");
 
 const obj = {
