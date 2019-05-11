@@ -1,12 +1,17 @@
 {
-  "name": "object-mapper",
+  "name": "object-remap",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src --out-dir ./",
+    "test": "node src/test.js"
   },
   "keywords": [],
   "author": "Nir Adler <niradler55@email.com> (https://niradler.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2"
+  }
 }
