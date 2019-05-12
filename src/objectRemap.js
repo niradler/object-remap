@@ -24,7 +24,17 @@ const getValue = (obj, fieldObj) => {
 function objectRemap(obj = {}, fields = []) {
   return fields.reduce(
     (newObj, fieldObj) =>
+<<<<<<< HEAD
       (newObj = setField(newObj, fieldObj.target, getValue(obj, fieldObj))),
+=======
+      (newObj = setField(
+        newObj,
+        fieldObj.target,
+        fieldObj.formatter && typeof fieldObj.formatter === "function"
+          ? fieldObj.formatter(getField(obj, fieldObj.origin))
+          : getField(obj, fieldObj.origin)
+      )),
+>>>>>>> 97a97e2eaeede949fa75a21e825818db4d9979b1
     {}
   );
 }
