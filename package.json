@@ -1,6 +1,6 @@
 {
   "name": "object-remap",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Remap object fields to a new structure.",
   "main": "index.js",
   "scripts": {

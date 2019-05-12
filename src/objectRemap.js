@@ -5,9 +5,6 @@ const getValue = (obj, fieldObj) => {
   let callback = false;
   let value = null;
 
-  (fieldObj.formater && typeof fieldObj.formater === "function") ||
-    (fieldObj.formatter && typeof fieldObj.formatter === "function");
-
   if (fieldObj.formater && typeof fieldObj.formater === "function") {
     callback = fieldObj.formater;
     value = callback(getField(obj, fieldObj.origin));
