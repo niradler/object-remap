@@ -7,8 +7,8 @@ function objectRemap(obj = {}, fields = []) {
       (newObj = setField(
         newObj,
         fieldObj.target,
-        fieldObj.formater && typeof fieldObj.formater === "function"
-          ? fieldObj.formater(getField(obj, fieldObj.origin))
+        fieldObj.formatter && typeof fieldObj.formatter === "function"
+          ? fieldObj.formatter(getField(obj, fieldObj.origin))
           : getField(obj, fieldObj.origin)
       )),
     {}
