@@ -22,9 +22,16 @@ const fieldsMap = [
   {
     origin: "d.f",
     target: "f",
-    formater: data => `${data.length} items`
+    formatter: data => `${data.length} items`
   }
 ];
 
 const newObj = objectRemap(obj, fieldsMap);
 console.log({ obj, newObj });
+
+/*
+{ 
+  obj: { a: 1, b: 2, c: 3, d: { e: 4, f: [Array] } },
+  newObj: { a: 1, e: 4, f: '3 items' } 
+}
+*/
