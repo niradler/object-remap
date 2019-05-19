@@ -17,6 +17,19 @@ const obj = {
   }
 };
 
+//simple
+const fields = ["a", "b", "c"];
+
+let newObj = objectRemap(obj, fields);
+console.log({ obj, newObj });
+/*
+{
+  obj: { a: 1, b: 2, c: 3, d: { e: 4, f: [Array] } },
+  newObj: { a: 1, b: 2, c: 3}
+}
+*/
+
+//advance
 const fieldsMap = [
   {
     origin: "a",
@@ -33,9 +46,8 @@ const fieldsMap = [
   }
 ];
 
-const newObj = objectRemap(obj, fieldsMap);
+newObj = objectRemap(obj, fieldsMap);
 console.log({ obj, newObj });
-
 /*
 { 
   obj: { a: 1, b: 2, c: 3, d: { e: 4, f: [Array] } },
