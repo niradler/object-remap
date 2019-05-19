@@ -4,7 +4,7 @@
   "description": "Remap object fields to a new structure.",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir ./",
+    "build": "babel src --out-dir ./dist",
     "test": "node src/test.js",
     "deploy": "npm run build && npm version patch && npm publish"
   },

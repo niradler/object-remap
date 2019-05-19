@@ -1,2 +1,2 @@
-const objectRemap = require("./objectRemap");
+const objectRemap = require("./dist/objectRemap");
 module.exports = objectRemap;
