@@ -1,8 +1,15 @@
-# object-remap
+# Object Remap
+
+Remap object fields to a new object structure.
+
+
+## Setup
 
 ```
 npm i -S object-remap
 ```
+
+## Usage
 
 ```
 const objectRemap = require("object-remap");

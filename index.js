@@ -1,2 +1,7 @@
 const objectRemap = require("./dist/objectRemap");
-module.exports = objectRemap;
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = objectRemap;
+} else {
+  window.objectRemap = objectRemap;
+}
